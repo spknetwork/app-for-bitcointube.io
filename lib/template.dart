@@ -6,6 +6,19 @@ class Template extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: SafeArea(
+        child: Container(
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/bit-coin-tube.jpg"),
+              fit: BoxFit.cover,
+            ),
+            color: Colors.black
+          ),
+        ),
+      ),
+    );
+    return Scaffold(
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 15),
         child: Column(
@@ -20,8 +33,7 @@ class Template extends StatelessWidget {
                       fit: StackFit.expand,
                       children: [
                         ClipRRect(
-                          borderRadius:
-                              const BorderRadius.all(Radius.circular(10)),
+                          borderRadius: const BorderRadius.all(Radius.circular(10)),
                           child: Image.asset(
                             'assets/image.png',
                             fit: BoxFit.cover,
@@ -48,8 +60,7 @@ class Template extends StatelessWidget {
                         Text(
                           "Airdrop for bitcoiners coming soon",
                           textAlign: TextAlign.center,
-                          style: TextStyle(
-                              fontSize: 50, fontWeight: FontWeight.bold),
+                          style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
                         ),
                         SizedBox(
                           height: 5,
