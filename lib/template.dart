@@ -11,7 +11,7 @@ class Template extends StatelessWidget {
           decoration: const BoxDecoration(
             image: DecorationImage(
               image: AssetImage("assets/bit-coin-tube.jpg"),
-              fit: BoxFit.cover,
+              fit: BoxFit.fitHeight,
             ),
             color: Colors.black
           ),
